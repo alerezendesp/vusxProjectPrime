@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+:root {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: white;
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  margin-left: 1.6rem;
+  max-height: 8rem; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.8rem;
+  padding: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+  padding: 1.6rem;
+}
+
+nav ul li a:hover {
+  border-radius: 2rem;
+  padding: 1.6rem;
+  background-color: #ebebeb;
+  color: #333;
+  font-weight: 800;
+}
+
+[data-gradient="#1"] {
+    width: 100%;
+    height: 2.4rem;
+}
+
+.gradient-line {
+    background: linear-gradient(135deg, #4f0099, #ff0000, #d90816, #bd4ef9, #a713f6, #d60000);
+    background-size: 400% 400%;
+
+    -webkit-animation: gradientLine 5s ease infinite;
+    -moz-animation: gradientLine 5s ease infinite;
+    animation: gradientLine 5s ease infinite;
+}
+
+@-webkit-keyframes gradientLine {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientLine {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientLine {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
